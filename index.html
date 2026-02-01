@@ -7,61 +7,25 @@
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
   <style>
     body { margin: 0; padding: 0; font-family: 'Nunito', sans-serif; }
     #root { min-height: 100vh; }
     * { box-sizing: border-box; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    const { useState, createElement: h } = React;
-    const { createRoot } = ReactDOM;
-    const { Baby, Clock, MapPin, AlertCircle, Calendar, Edit3 } = lucide;
-    
-    const root = createRoot(document.getElementById('root'));
-    root.render(h('div', {
-      style: {
-        minHeight: '100vh',
-        background: 'linear-gradient(135deg, #FFF5F7 0%, #FFF9E6 50%, #E8F4F8 100%)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '2rem',
-        fontFamily: 'Nunito, sans-serif'
-      }
-    }, 
-      h('div', { style: { textAlign: 'center', maxWidth: '600px' } },
-        h('h1', { 
-          style: { 
-            fontSize: '2.5rem', 
-            color: '#FF9AB5', 
-            marginBottom: '1rem',
-            fontWeight: '800'
-          }
-        }, '👶 赤ちゃんとちょっとお出かけプランナー'),
-        h('p', { 
-          style: { 
-            fontSize: '1.2rem', 
-            color: '#8B7B9E',
-            marginBottom: '2rem'
-          }
-        }, '授乳・おむつのタイミングから出発時刻を逆算'),
-        h('div', {
-          style: {
-            background: 'white',
-            padding: '2rem',
-            borderRadius: '20px',
-            boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
-          }
-        },
-          h('p', { style: { color: '#FF9AB5', fontSize: '1.1rem', marginBottom: '1rem' }}, '🚧 現在、完全版を準備中です'),
-          h('p', { style: { color: '#6B5B7A', fontSize: '0.9rem' }}, 'もうしばらくお待ちください...')
-        )
-      )
-    ));
-  </script>
+  <div id="root">
+    <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #FFF5F7 0%, #FFF9E6 50%, #E8F4F8 100%);">
+      <div style="text-align: center; font-size: 2rem; color: #FF9AB5; font-weight: 800;">
+        👶 読み込み中...
+      </div>
+    </div>
+  </div>
+  <script type="text/babel" src="app.jsx"></script>
 </body>
 </html>
