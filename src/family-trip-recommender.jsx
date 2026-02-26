@@ -5,182 +5,187 @@ const destinations = [
   {
     prefecture: '北海道',
     city: '富良野市',
-    reason: '広大なラベンダー畑と大自然。子供が走り回れる広い草原、牧場体験も楽しめます。',
+    reason: '一面に広がるラベンダー畑と牧草地。子供が思いきり走り回れる広大な自然が魅力。',
+  },
+  {
+    prefecture: '北海道',
+    city: '斜里町（知床）',
+    reason: '世界遺産の大自然。クルーズ船から野生のヒグマやシャチを間近に観察できる。',
   },
   {
     prefecture: '北海道',
     city: '函館市',
-    reason: '夜景・朝市・イカ釣り体験。子供向け体験型施設が充実し、海鮮グルメも絶品。',
+    reason: '朝市でイカをさばく体験や海鮮丼。元町の坂と夜景を歩いて旅情たっぷり。',
   },
   {
     prefecture: '青森県',
-    city: '青森市',
-    reason: 'ねぶた祭りの迫力や三内丸山遺跡で縄文文化を体験。りんご狩りも人気。',
+    city: '弘前市',
+    reason: '弘前城の桜まつりとりんご狩り体験。津軽の食文化と歴史が子供の記憶に残る。',
   },
   {
-    prefecture: '宮城県',
-    city: '仙台市',
-    reason: 'うみの杜水族館で海の生き物と触れ合い。七夕まつりは子供も大喜び。',
+    prefecture: '岩手県',
+    city: '平泉町',
+    reason: '世界遺産・中尊寺金色堂。奥州藤原氏の栄華と平安の歴史を親子で学べる。',
   },
   {
-    prefecture: '福島県',
-    city: 'いわき市',
-    reason: 'スパリゾートハワイアンズで一年中水遊び。アクアマリンふくしまも人気の水族館。',
+    prefecture: '秋田県',
+    city: '仙北市',
+    reason: '角館の武家屋敷と桜並木、田沢湖の透明な水。東北の四季と文化が凝縮されている。',
+  },
+  {
+    prefecture: '山形県',
+    city: '鶴岡市',
+    reason: '羽黒山の杉並木は圧巻の雰囲気。庄内米や芋煮など豊かな食文化も楽しめる。',
   },
   {
     prefecture: '栃木県',
     city: '日光市',
-    reason: '東照宮の壮大な建築と華厳の滝。自然豊かで温泉もあり、ファミリーに最適。',
+    reason: '華厳の滝と戦場ヶ原の湿原ハイキング。大自然の中で子供と本物の絶景に出会える。',
   },
   {
     prefecture: '群馬県',
     city: '草津町',
-    reason: '日本一の温泉地。家族で湯もみ体験ができ、周辺の自然景観も素晴らしい。',
+    reason: '日本一の温泉地で湯もみ体験。湯畑の迫力は子供も圧倒される温泉街の原風景。',
   },
   {
-    prefecture: '千葉県',
-    city: '浦安市',
-    reason: '東京ディズニーリゾートの夢の世界。子供の笑顔が溢れる最高の思い出づくり。',
-  },
-  {
-    prefecture: '神奈川県',
-    city: '横浜市',
-    reason: 'みなとみらいの夜景、八景島シーパラダイス。中華街でグルメも楽しめる。',
-  },
-  {
-    prefecture: '山梨県',
-    city: '富士吉田市',
-    reason: '富士山を間近に望む絶景。富士急ハイランドのスリルと河口湖の自然を満喫。',
-  },
-  {
-    prefecture: '長野県',
-    city: '軽井沢町',
-    reason: '涼しい高原リゾート。アウトレットや自然体験施設が充実し、家族で一日中楽しめる。',
-  },
-  {
-    prefecture: '長野県',
-    city: '松本市',
-    reason: '国宝・松本城と美しい街並み。アルプス公園で子供が思いきり遊べる。',
-  },
-  {
-    prefecture: '静岡県',
-    city: '浜松市',
-    reason: '浜名湖体験学習施設やアクトシティ。うなぎグルメも外せない。',
-  },
-  {
-    prefecture: '愛知県',
-    city: '名古屋市',
-    reason: 'レゴランドジャパンで大興奮。名古屋城や科学館など教育的な施設も多い。',
-  },
-  {
-    prefecture: '三重県',
-    city: '伊勢市',
-    reason: '伊勢神宮参拝と食べ歩き。おかげ横丁の食文化を子供と一緒に体験できる。',
-  },
-  {
-    prefecture: '三重県',
-    city: '鳥羽市',
-    reason: '鳥羽水族館は日本最大級。ジュゴンや珍しい深海魚に子供が釘付けに。',
-  },
-  {
-    prefecture: '京都府',
-    city: '京都市',
-    reason: '千年の歴史と文化。着物体験や金閣寺、嵐山など子供の記憶に残る日本の原風景。',
-  },
-  {
-    prefecture: '大阪府',
-    city: '大阪市',
-    reason: 'ユニバーサル・スタジオ・ジャパンで大冒険。たこ焼きやお好み焼きも子供に大人気。',
-  },
-  {
-    prefecture: '兵庫県',
-    city: '神戸市',
-    reason: '神戸どうぶつ王国や須磨海浜水族園。異国情緒あふれる街並みで家族旅行を満喫。',
-  },
-  {
-    prefecture: '奈良県',
-    city: '奈良市',
-    reason: '奈良公園の鹿と触れ合い。東大寺の大仏の迫力は子供に大きな感動を与えます。',
-  },
-  {
-    prefecture: '和歌山県',
-    city: '白浜町',
-    reason: 'アドベンチャーワールドでパンダと遊び、透明度抜群の白良浜ビーチを満喫。',
-  },
-  {
-    prefecture: '広島県',
-    city: '廿日市市',
-    reason: '宮島の厳島神社は世界遺産。鹿と一緒に歩き、もみじ饅頭を食べながら歴史探訪。',
-  },
-  {
-    prefecture: '岡山県',
-    city: '倉敷市',
-    reason: '美観地区の白壁と川下り体験。鷲羽山ハイランドで絶叫アトラクションも楽しめる。',
-  },
-  {
-    prefecture: '香川県',
-    city: '善通寺市',
-    reason: 'レオマワールドは四国最大の遊園地。うどん作り体験も子供に大人気。',
-  },
-  {
-    prefecture: '愛媛県',
-    city: '松山市',
-    reason: '道後温泉で家族風呂を楽しみ、松山城からの眺望も格別。みきゃんと記念撮影も。',
-  },
-  {
-    prefecture: '福岡県',
-    city: '福岡市',
-    reason: 'マリノアシティや海の中道海浜公園。博多ラーメンや屋台グルメも家族で楽しめる。',
-  },
-  {
-    prefecture: '長崎県',
-    city: '長崎市',
-    reason: 'ハウステンボスで豪華なアトラクション。異国情緒あふれる街並みと歴史も学べる。',
-  },
-  {
-    prefecture: '熊本県',
-    city: '熊本市',
-    reason: 'くまモンに会いに行こう！熊本城や水前寺公園で歴史と自然を一度に体験。',
-  },
-  {
-    prefecture: '大分県',
-    city: '別府市',
-    reason: '地獄めぐりで迫力の温泉を見学。家族で入れる温泉施設が充実している温泉天国。',
-  },
-  {
-    prefecture: '宮崎県',
-    city: '宮崎市',
-    reason: 'フェニックス自然動物園でコアラと記念撮影。青島神社と鬼の洗濯板も見どころ。',
-  },
-  {
-    prefecture: '鹿児島県',
-    city: '指宿市',
-    reason: '砂蒸し温泉は子供も大喜びの体験。池田湖のイッシー探しも旅の思い出に。',
-  },
-  {
-    prefecture: '沖縄県',
-    city: '恩納村',
-    reason: '透き通るエメラルドグリーンの海でシュノーケリング。美ら海水族館も近くて最高。',
-  },
-  {
-    prefecture: '沖縄県',
-    city: '那覇市',
-    reason: '首里城と国際通りで沖縄文化を体感。ブルーシールアイスは子供のお気に入りに。',
+    prefecture: '新潟県',
+    city: '佐渡市',
+    reason: 'トキが舞う島で金山遺跡を探検。島を丸ごとアドベンチャーできる非日常の体験。',
   },
   {
     prefecture: '新潟県',
     city: '湯沢町',
-    reason: '冬はスキー、夏は高原ハイキング。東京から新幹線で約80分のアクセスも魅力。',
+    reason: '冬はスキー、夏は高原ハイキング。雪遊びと川遊びの両方が楽しめる山の町。',
+  },
+  {
+    prefecture: '長野県',
+    city: '大町市',
+    reason: '黒部ダムの圧倒的スケールと北アルプスの絶景。子供の「でかい！」が止まらない。',
+  },
+  {
+    prefecture: '長野県',
+    city: '松本市',
+    reason: '国宝・松本城と城下町散策、そば打ち体験。信州の食と歴史がぎゅっと詰まった街。',
+  },
+  {
+    prefecture: '山梨県',
+    city: '山中湖村',
+    reason: '富士山を望む湖畔でカヌーや釣り体験。雄大な富士の姿が子供の心に刻まれる。',
+  },
+  {
+    prefecture: '静岡県',
+    city: '伊豆市',
+    reason: '浄蓮の滝とわさび田の散策、海沿いのドライブ。伊豆の豊かな自然と海鮮グルメを満喫。',
   },
   {
     prefecture: '石川県',
     city: '金沢市',
-    reason: '兼六園の美しい庭園と近江町市場の食文化。金沢21世紀美術館も子供に人気。',
+    reason: '兼六園と東茶屋街の散策、金箔体験。加賀百万石の文化を親子でじっくり味わえる。',
   },
   {
     prefecture: '岐阜県',
     city: '白川村',
-    reason: '世界遺産・白川郷の合掌造り集落。冬のライトアップは息をのむ絶景です。',
+    reason: '世界遺産の合掌造り集落。冬のライトアップは息をのむ絶景で、子供の感性が育つ。',
+  },
+  {
+    prefecture: '滋賀県',
+    city: '長浜市',
+    reason: '琵琶湖のほとりでカヤック体験、黒壁スクエアでガラス工芸。湖の大きさに子供も驚く。',
+  },
+  {
+    prefecture: '三重県',
+    city: '伊勢市',
+    reason: '伊勢神宮参拝とおかげ横丁の食べ歩き。日本のこころを親子で感じる旅。',
+  },
+  {
+    prefecture: '京都府',
+    city: '京都市',
+    reason: '千年の歴史と嵐山の竹林、着物での散策。日本の原風景が子供の記憶に深く刻まれる。',
+  },
+  {
+    prefecture: '奈良県',
+    city: '奈良市',
+    reason: '奈良公園で鹿に直接えさやり、東大寺の大仏の迫力。自然と歴史が共存する唯一の場所。',
+  },
+  {
+    prefecture: '和歌山県',
+    city: '白浜町',
+    reason: '透明度抜群の白良浜ビーチと熊野の大自然。海と山の両方が楽しめる南紀の旅。',
+  },
+  {
+    prefecture: '兵庫県',
+    city: '城崎温泉',
+    reason: '外湯めぐりと温泉街の下駄散歩。浴衣で街を歩く体験は子供も大喜びの思い出に。',
+  },
+  {
+    prefecture: '広島県',
+    city: '廿日市市（宮島）',
+    reason: '世界遺産・厳島神社と海の上の鳥居。潮が引いた砂浜で鹿と一緒に歩ける特別な島。',
+  },
+  {
+    prefecture: '岡山県',
+    city: '倉敷市',
+    reason: '美観地区の白壁と柳並木を川下り体験。のどかな水郷の景色に心がほっこりする。',
+  },
+  {
+    prefecture: '島根県',
+    city: '出雲市',
+    reason: '出雲大社の厳かな雰囲気と出雲そば体験。日本最古の神話の地で歴史ロマンを感じる。',
+  },
+  {
+    prefecture: '香川県',
+    city: '小豆島町',
+    reason: 'オリーブ畑と迷路のまちを散策、海沿いサイクリング。うどん打ち体験も楽しい島旅。',
+  },
+  {
+    prefecture: '高知県',
+    city: '四万十市',
+    reason: '日本最後の清流・四万十川でカヌー体験と川遊び。水の透明さに子供が歓声をあげる。',
+  },
+  {
+    prefecture: '福岡県',
+    city: '糸島市',
+    reason: '美しい海岸線と冬の牡蠣小屋体験、糸島グルメ。都市から近い海の絶景リゾート。',
+  },
+  {
+    prefecture: '長崎県',
+    city: '島原市',
+    reason: '湧水の街と雲仙の温泉・火山地帯。九州の自然の力を体感できる旅。',
+  },
+  {
+    prefecture: '熊本県',
+    city: '阿蘇市',
+    reason: '世界最大級のカルデラと広大な草原。大地の息吹を感じる火山の景観は子供も大興奮。',
+  },
+  {
+    prefecture: '大分県',
+    city: '別府市',
+    reason: '地獄めぐりで迫力の温泉を見学し、家族で温泉文化を体感。湯煙の迫力は本物。',
+  },
+  {
+    prefecture: '宮崎県',
+    city: '高千穂町',
+    reason: '高千穂峡でボート体験と滝の絶景。神話の地で日本の原風景と伝説に触れられる。',
+  },
+  {
+    prefecture: '鹿児島県',
+    city: '屋久島町',
+    reason: '縄文杉と苔むす神秘の森。世界遺産の大自然の中で本物の大冒険ができる島。',
+  },
+  {
+    prefecture: '鹿児島県',
+    city: '指宿市',
+    reason: '砂蒸し温泉は子供も大喜びの珍体験。知林ヶ島への砂州渡りも潮が引いたときだけの奇跡。',
+  },
+  {
+    prefecture: '沖縄県',
+    city: '竹富島',
+    reason: '水牛車と星砂の浜、琉球の原風景。車が走らない島でのんびり沖縄文化を体感できる。',
+  },
+  {
+    prefecture: '沖縄県',
+    city: '本部町',
+    reason: '珊瑚礁の透明な海でシュノーケリング、備瀬のフクギ並木散策。沖縄の自然を全身で感じる。',
   },
 ];
 
@@ -213,25 +218,27 @@ export default function FamilyTripRecommender() {
           <p style={styles.subtitle}>ボタンを押せば行き先を決めてあげます！</p>
         </div>
 
-        <button
-          onClick={handleRecommend}
-          disabled={isSpinning}
-          style={{
-            ...styles.button,
-            ...(isSpinning ? styles.buttonDisabled : {}),
-          }}
-        >
-          <RefreshCw
-            size={22}
+        {!result && (
+          <button
+            onClick={handleRecommend}
+            disabled={isSpinning}
             style={{
-              marginRight: 8,
-              animation: isSpinning ? 'spin 0.6s linear' : 'none',
-              display: 'inline-block',
-              verticalAlign: 'middle',
+              ...styles.button,
+              ...(isSpinning ? styles.buttonDisabled : {}),
             }}
-          />
-          {result ? 'もう一度決める' : '行き先を決める！'}
-        </button>
+          >
+            <RefreshCw
+              size={22}
+              style={{
+                marginRight: 8,
+                animation: isSpinning ? 'spin 0.6s linear' : 'none',
+                display: 'inline-block',
+                verticalAlign: 'middle',
+              }}
+            />
+            行き先を決める！
+          </button>
+        )}
 
         {result && (
           <div style={styles.card}>
@@ -247,6 +254,25 @@ export default function FamilyTripRecommender() {
             </div>
             <div style={styles.divider} />
             <p style={styles.reason}>{result.reason}</p>
+            <button
+              onClick={handleRecommend}
+              disabled={isSpinning}
+              style={{
+                ...styles.retryButton,
+                ...(isSpinning ? styles.retryButtonDisabled : {}),
+              }}
+            >
+              <RefreshCw
+                size={16}
+                style={{
+                  marginRight: 6,
+                  animation: isSpinning ? 'spin 0.6s linear' : 'none',
+                  display: 'inline-block',
+                  verticalAlign: 'middle',
+                }}
+              />
+              やり直し
+            </button>
           </div>
         )}
 
@@ -318,7 +344,6 @@ const styles = {
   buttonDisabled: {
     opacity: 0.7,
     cursor: 'not-allowed',
-    transform: 'scale(0.98)',
     boxShadow: '0 2px 10px rgba(249,115,22,0.2)',
   },
   card: {
@@ -331,7 +356,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: 16,
-    animation: 'fadeIn 0.4s ease',
   },
   cardHeader: {
     display: 'flex',
@@ -343,7 +367,6 @@ const styles = {
     fontSize: 13,
     fontWeight: 600,
     color: '#f97316',
-    textTransform: 'uppercase',
     letterSpacing: '1px',
   },
   location: {
@@ -354,7 +377,7 @@ const styles = {
     flexWrap: 'wrap',
   },
   prefecture: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: 700,
     color: '#ea580c',
     background: '#fff7ed',
@@ -368,7 +391,7 @@ const styles = {
     fontWeight: 300,
   },
   city: {
-    fontSize: 28,
+    fontSize: 26,
     fontWeight: 800,
     color: '#1c1917',
   },
@@ -383,6 +406,25 @@ const styles = {
     color: '#44403c',
     margin: 0,
     textAlign: 'center',
+  },
+  retryButton: {
+    background: 'none',
+    color: '#f97316',
+    border: '2px solid #fed7aa',
+    borderRadius: 12,
+    padding: '10px 24px',
+    fontSize: 15,
+    fontWeight: 700,
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'background 0.15s',
+    alignSelf: 'center',
+  },
+  retryButtonDisabled: {
+    opacity: 0.5,
+    cursor: 'not-allowed',
   },
   footer: {
     fontSize: 12,
